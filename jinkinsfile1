@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('maven clean') {
             steps {
+                sh "echo maven"
                 sh "mvn clean"
             }
         }
